@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Functions to Cache an Inverse Matrix in the Global Environment  
+## And Return the Cached Inverse Matrix or Provide an Inverse Matrix for Input of New Matrix/Matrices
 
-## Write a short comment describing this function
+## This function takes the input of a matrix, computes the inverse of the matrix, 
+## caches the resulting inverse matrix, and sets functions to retrieve the cached
+## matrix in the cacheSolve function
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -18,7 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function takes the input of a matrix and checks to see if the inverse has already been 
+## calculated. If it has, it will retrieve the cached matrix. If not, it will calculate the input matrix'
+## inverse
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
